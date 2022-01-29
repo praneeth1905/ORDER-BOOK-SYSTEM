@@ -1,4 +1,3 @@
-import email
 from flask import Flask, flash, redirect, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
 from datetime import date
@@ -31,7 +30,6 @@ def __init__(self,name,book,type,cost,quantity):
     self.status='PLACED'
     self.orderdate='29-01-2022'
 
-@app.route('/',methods=['POST','GET'])
 @app.route('/customer',methods=['POST','GET'])
 def customer():
     if request.method=='POST':
@@ -46,8 +44,19 @@ def admin():
     
     return render_template("admin.html",orders=orders.query.all())
 
-@app.route('')
 
+
+@app.route('/',methods=['POST','GET'])
+def home():
+        return render_template('index.html')
+
+@app.route('/adm',methods=['POST','GET'])
+def admlog():
+        return render_template('adm-log.html')
+
+@app.route('/cust',methods=['POST','GET'])
+def custLog():
+        return render_template('cust-log.html')
 
 if __name__== '__main__':
     db.create_all()

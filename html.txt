@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="p.css">
+    
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="https://1000logos.net/wp-content/uploads/2021/05/DBS-Bank-logo.png"
+              class="dbs-logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" id="navItem1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navItem2" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="navItem3" href="#">Stock Purchase</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="banner-bg-container d-flex flex-column justify-content-center">
+          <div class="text-center">
+              <h1 class="banner-head text-center">STOCK<br/>EXCHANGE</h1>
+              <a href="#calculator" class="banner-button">Purchase</a>
+          </div>
+       </div>
+       <div class="Calculator" id="calculator">
+           <div class="container mt-5">
+               <div class="row">
+                   <div class="col-12">
+                       <h1 class="home-head">Stock Purchase Center</h1>
+                       <p class="loan-details-para">Stock Details</p>
+                   </div>
+                   <div class="col-12 col-md-6">
+                       <h1 class="loan-amount">Stock Name</h1>
+                       <input type="text" id="loanAmount" class="loanAmount-input" placeholder="Stock"/>
+                       <p class="input-para">(Ex:DBS, SBI, Union)</p>
+                       <div class="dropdown mb-4">    
+                <label for="books"> Book </label>
+                <select name="book-names" id="book-names">
+
+                    <option value="item-1">ITEM-1</option>
+                    <option value="item-2">ITEM-2</option>
+                    <option value="item-3">ITEM-3</option>
+                    <option value="item-4">ITEM-4</option>
+
+                </select>
+            </div>
+                   </div>
+                   <div class="col-12 col-md-6">
+                       <h1 class="loan-amount">Stock Amount</h1>
+                       <input type="text" id="loanAmount" class="loanAmount-input" placeholder="Amount"/>
+                       <p class="input-para"></p>
+                   </div>
+                   <div class="col-12 col-md-6">
+                    <h1 class="loan-amount">Market or Limited</h1>
+                    <input type="text" id="interestRate" class="loanAmount-input" placeholder="MARKET/LIMITED"/>
+                    <p class="input-para"></p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h1 class="loan-amount">Quantity (in numbers)</h1>
+                    <input type="text" id="tenure" class="loanAmount-input" placeholder="20"/>
+                    <p class="input-para">(min 1)</p>
+                    <button class="button" id="clearInput">Clear</button>
+                    <button class="button-calculate" id="calculateInput">BUY</button>
+                </div>
+               </div>
+               <div class="results">
+                   <h1 class="loan-details-para mt-4">Total Expenditure</h1>
+                   <h1 class="loan-amount">Amount</h1>
+                   <input type="text" id="emiAmount" class="loanAmount-input" placeholder="Result"/>
+                   <p class="result-text" id="resultText"></p>
+                   <button class="apply-button">Buy  Now</button>
+               </div>
+           </div>
+       </div>
+       <script type="text/javascript" src="p.js"></script>
+</body>
+</html>

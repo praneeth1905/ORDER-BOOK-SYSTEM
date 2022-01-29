@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.dbs-logo{
+    width:80px;
+    height:70px;
+}
+.banner-bg-container{
+    background-image:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.4feLmnuAVrIoy_ADKmbETgHaE8%26pid%3DApi&f=1") ;
+    background-size: cover;
+    height:100vh;
+    padding:10px;
+
+}
+.banner-head{
+    color:rgb(8, 8, 8);
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: bold;
+}
+.banner-para{
+    color:white;
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 200;
+
+}
+.banner-button{
+    background-color: rgb(101, 29, 218);
+    color:white;
+    font-weight:bold;
+    font-family:"Roboto";
+    border-width: 0px;
+    margin-top:20px;
+    padding:5px;
+    border-radius: 8px;
+    width:130px;
+    height:50px;
+}
+.calculator{
+    background-color: white;
+}
+.home-head{
+    color:black;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+}
+.loan-details-para{
+    color:black;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 800;
+}
+.loan-amount{
+    font-family: "Roboto";
+    font-size:20px;
+}
+.loanAmount-input{
+    background-color: rgb(230, 241, 243);
+    width:100%;
+    border-style: solid;
+    margin-top:6px;
+    padding:15px;
+    border-color:blanchedalmond;
+    border-radius: 10px;
+
+}
+.input-para{
+    color:gray;
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-top: 1;
+}
+.button{
+    color: rgb(26, 16, 16);
+    background-color: rgb(243, 240, 240);
+    border-radius: 8px;
+    font-family: "Roboto";
+    font-weight: bold;
+    width: 110px;
+    height: 40px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-width: 2px;
+    border-color: black;
+}
+.button-calculate{
+    color: rgb(15, 10, 10);
+    background-color: rgb(77, 55, 202);
+    border-radius: 8px;
+    font-family: "Roboto";
+    font-weight: bold;
+    width: 110px;
+    border-width: 0px;
+    height: 40px;
+    margin-bottom: 10px;   
+}
+.apply-button{
+    background-color: rgb(82, 41, 231);
+    color:rgb(19, 17, 17);
+    font-weight:bold;
+    font-family:"Roboto";
+    border-width: 0px;
+    margin-top:20px;
+    border-radius: 8px;
+    width:150px;
+    height:60px;
+    margin-bottom: 20px;
+}
+.result-text{
+    margin: 15px;
+    color:rgb(228, 29, 29);
+    font-family: "Roboto";
+    font-size: 20px;
+}
